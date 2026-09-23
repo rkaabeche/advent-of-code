@@ -17,7 +17,7 @@ type Rotation struct {
 	numbers   int
 }
 
-func PartOne() int {
+func Day1PartOne() int {
 	var lines []string = utils.FileToLines(filePath)
 
 	var rotations []Rotation = linesToRotations(lines)
@@ -38,7 +38,7 @@ func PartOne() int {
 	return lZeroCounter
 }
 
-func PartTwo() int {
+func Day1PartTwo() int {
 	var lines []string = utils.FileToLines(filePath)
 
 	var rotations []Rotation = linesToRotations(lines)

@@ -6,7 +6,8 @@ import (
 
 func main() {
 
-	twenty_five.PartOne()
-	// twenty_five.PartTwo()
+	// twenty_five.PartOne()
+	// twenty_five.Day2PartTwo()
+	twenty_five.Day2PartOne()
 
 }

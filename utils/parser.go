@@ -2,6 +2,7 @@ package utils
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 )
@@ -21,4 +22,14 @@ func FileToLines(filePath string) []string {
 		lines = append(lines, scanner.Text())
 	}
 	return lines
+}
+
+func FileToString(filePath string) string {
+	b, err := os.ReadFile(filePath)
+
+	if err != nil {
+		fmt.Print(err)
+	}
+
+	return string(b)
 }
